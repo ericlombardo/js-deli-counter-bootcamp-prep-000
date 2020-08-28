@@ -1,4 +1,4 @@
 // function to welcome guest
-function takeANumber(katzDeliLine, name) {
-  return `Welcome, $(name}. You are number ${katzDeliLine} in line.`);
+function takeANumber(deliLineCount, name) {
+  return `Welcome, ${name}. You are number ${deliLineCount + 1} in line.`);
 }
