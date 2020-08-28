@@ -6,7 +6,7 @@ function takeANumber(line, name) {
   return (`Welcome, ${name}. You are number ${line.length} in line.`);
 }
 
-//Notifies who is being served
+/* Notifies who is being served
 function nowServing() {
-  if (Array.isArray(line) )
+  if (Array.isArray(line)
 }
