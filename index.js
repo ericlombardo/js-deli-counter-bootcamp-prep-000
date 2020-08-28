@@ -20,10 +20,11 @@ function nowServing(line) {
 
 function currentLine(line) {
   // create an empty array
+  var numberedList = [];
   // loop through and array and list names with number
   for (var i = 0; i < line.length; i++) {
-
+    numberedList[i] = `${[i]}. ${line[i]}`
   }
   // return general greeting with array which is numbered list
-
+  return (`The line is currently: ${numberedList}`);
 }
