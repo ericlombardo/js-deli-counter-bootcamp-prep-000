@@ -8,9 +8,22 @@ function takeANumber(line, name) {
 
 // Notifies who is being served
 function nowServing(line) {
+  // checks to see if array is empty
   if (line.length === 0) {
+    // if empty sends message
     return (`There is nobody waiting to be served!`);
   } else {
+    // Sends message when there is a line and removes the person being served
     return (`Currently serving ${line.shift()}.`)
   }
+}
+
+function currentLine(line) {
+  // create an empty array
+  // loop through and array and list names with number
+  for (var i = 0; i < line.length; i++) {
+    
+  } 
+  // return general greeting with array which is numbered list
+  
 }
