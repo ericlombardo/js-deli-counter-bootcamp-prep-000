@@ -7,7 +7,7 @@ function takeANumber(line, name) {
 }
 
 // Notifies who is being served
-function nowServing() {
+function nowServing(line) {
   if (Array.isArray(line)) {
     return (`There is nobody waiting to be served!`);
   }
