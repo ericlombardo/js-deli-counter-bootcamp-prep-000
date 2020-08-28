@@ -19,12 +19,19 @@ function nowServing(line) {
 }
 
 function currentLine(line) {
-  // create an empty array
-  var numberedList = [];
-  // loop through and array and list names with number
-  for (var i = 0; i < line.length; i++) {
-    numberedList[i] = `${Number([i]) + 1}. ${line[i]}`
+  // checks to see if array is empty
+  if (line.length === 0) {
+    // Send message if it is
+    return `The line is currently empty.`
+  } else {
+    // create an empty array
+    var numberedList = [];
+    // loop through and array and list names with number
+    for (var i = 0; i < line.length; i++) {
+      numberedList[i] = `${Number([i]) + 1}. ${line[i]}`
+    }
+    // return general greeting with array and join the array with comma space to format correctly
+    return ('The line is currently: ' + numberedList.join(', '));
+  
   }
-  // return general greeting with array which is numbered list
-  return ('The line is currently: ' + numberedList.join(', '));
 }
