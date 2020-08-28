@@ -26,5 +26,5 @@ function currentLine(line) {
     numberedList[i] = `${Number([i]) + 1}. ${line[i]}`
   }
   // return general greeting with array which is numbered list
-  return (`The line is currently: ${numberedList}`);
+  return ('The line is currently: ' + numberedList.join(, ));
 }
