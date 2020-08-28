@@ -22,8 +22,8 @@ function currentLine(line) {
   // create an empty array
   // loop through and array and list names with number
   for (var i = 0; i < line.length; i++) {
-    
-  } 
+
+  }
   // return general greeting with array which is numbered list
-  
+
 }
