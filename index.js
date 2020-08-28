@@ -32,6 +32,6 @@ function currentLine(line) {
     }
     // return general greeting with array and join the array with comma space to format correctly
     return ('The line is currently: ' + numberedList.join(', '));
-  
+
   }
 }
