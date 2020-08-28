@@ -10,5 +10,7 @@ function takeANumber(line, name) {
 function nowServing(line) {
   if (Array.isArray(line)) {
     return (`There is nobody waiting to be served!`);
+  } else {
+    return (`Currently serving ${line.shift()}.`)
   }
 }
